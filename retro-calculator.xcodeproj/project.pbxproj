@@ -12,6 +12,7 @@
 		757917D91C4441D000B8B670 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757917D71C4441D000B8B670 /* Main.storyboard */; };
 		757917DB1C4441D000B8B670 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 757917DA1C4441D000B8B670 /* Assets.xcassets */; };
 		757917DE1C4441D000B8B670 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757917DC1C4441D000B8B670 /* LaunchScreen.storyboard */; };
+		757917E61C44640D00B8B670 /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 757917E51C44640D00B8B670 /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		757917DA1C4441D000B8B670 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		757917DD1C4441D000B8B670 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		757917DF1C4441D000B8B670 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		757917E51C44640D00B8B670 /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		757917D21C4441D000B8B670 /* retro-calculator */ = {
 			isa = PBXGroup;
 			children = (
+				757917E51C44640D00B8B670 /* btn.wav */,
 				757917D31C4441D000B8B670 /* AppDelegate.swift */,
 				757917D51C4441D000B8B670 /* ViewController.swift */,
 				757917D71C4441D000B8B670 /* Main.storyboard */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					757917CF1C4441D000B8B670 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = X82WRHF73Y;
 					};
 				};
 			};
@@ -125,6 +129,7 @@
 				757917DE1C4441D000B8B670 /* LaunchScreen.storyboard in Resources */,
 				757917DB1C4441D000B8B670 /* Assets.xcassets in Resources */,
 				757917D91C4441D000B8B670 /* Main.storyboard in Resources */,
+				757917E61C44640D00B8B670 /* btn.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +252,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myapp.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -258,10 +266,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "retro-calculator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.myapp.retro-calculator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -284,6 +295,7 @@
 				757917E41C4441D000B8B670 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
